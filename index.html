@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self' data:; base-uri 'none'; form-action 'none'; upgrade-insecure-requests">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#d7ff3f">
+  <meta name="description" content="Coming soon: ISYEET. End-to-end encrypted ASCII text, a clear conversation inbox, seven-day messages, and Messaging or Terminal themes. Preview the iPhone app.">
+  <meta property="og:title" content="ISYEET — Just text. Coming soon.">
+  <meta property="og:description" content="I Send You E2E Text. A familiar inbox for encrypted ASCII text. Seven-day messages. Messaging and Terminal themes. Coming soon.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.isyeet.io/">
+  <link rel="canonical" href="https://www.isyeet.io/">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%23d7ff3f'/%3E%3Cpath d='M8 7h16v4h-6v10h6v4H8v-4h6V11H8z' fill='%23141513'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/style.css">
+  <title>ISYEET — Just text. Coming soon.</title>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="page">
+    <header class="header">
+      <a class="wordmark" href="/" aria-label="ISYEET home">isyeet<span aria-hidden="true">_</span></a>
+      <p class="name">I Send You E2E Text</p>
+      <nav class="navigation" aria-label="Main navigation"><a class="nav" href="#rules">Features</a><a class="nav" href="#screenshots">Screenshots <span aria-hidden="true">↘</span></a></nav>
+    </header>
+    <main id="main">
+      <section class="hero" aria-labelledby="headline">
+        <div class="hero-copy">
+          <p class="eyebrow">A deliberately small messaging service</p>
+          <h1 id="headline">Just text.<br>End to end<span class="period">.</span></h1>
+          <p class="intro">A familiar inbox. Private text.<br>Send what you mean. Nothing attached.</p>
+          <div class="availability"><span class="label">Coming soon</span><span>iPhone + command line</span></div>
+        </div>
+        <figure class="hero-preview">
+          <a class="screenshot-link" href="/screenshots/inbox-v8.png" aria-label="View full-size Messages inbox preview"><img src="/screenshots/inbox-v8.png" width="1206" height="2622" alt="ISYEET Messages inbox with recent conversations, dates, message previews, unread counts, and separate Messages, Contacts and Settings tabs." fetchpriority="high"></a>
+          <figcaption>Your conversations, at a glance.<span>Development preview · Fictional messages</span></figcaption>
+        </figure>
+      </section>
+
+      <section class="rules" id="rules" aria-labelledby="rules-title">
+        <div class="section-heading"><span class="eyebrow">The whole idea</span><span class="section-index" aria-hidden="true">001—095</span></div>
+        <h2 id="rules-title">95 characters.<br>Zero extras.</h2>
+        <p class="rules-intro">Letters, numbers, punctuation, and spaces. The 95 printable ASCII characters are the entire vocabulary.</p>
+        <div class="rule-grid">
+          <article><span class="rule-number">01 / THE MESSAGE</span><h3>Words stay words.</h3><p>No photos. No videos. No attachments. No emoji, hidden characters, or rich formatting. Links stay plain text.</p></article>
+          <article><span class="rule-number">02 / THE ENCRYPTION</span><h3>For your contact.</h3><p>Messages are encrypted on your device using Signal’s official libsignal. The relay delivers ciphertext; it does not hold the keys to read your text.</p></article>
+          <article><span class="rule-number">03 / THE BOUNDARY</span><h3>Checked on arrival.</h3><p>The receiving app validates decrypted bytes before displaying anything. Non-ASCII and non-printable content is rejected, with an alert.</p></article>
+        </div>
+      </section>
+
+      <section class="screenshots" id="screenshots" aria-labelledby="screenshots-title">
+        <div class="screenshots-heading"><div><p class="eyebrow">Inside the iPhone app</p><h2 id="screenshots-title">Messages up front.<br>Everything in its place.</h2></div><p>A conversation list with dates, previews and unread counts. Contact management has its own tab. These are actual development UI captures with fictional local data. Tap any preview to see it full size.</p></div>
+        <div class="screenshot-grid">
+          <figure class="screenshot-card"><div class="screenshot-surface"><a class="screenshot-link" href="/screenshots/chat-v8.png" aria-label="View full-size conversation preview"><img src="/screenshots/chat-v8.png" width="1206" height="2622" loading="lazy" alt="A demo conversation in the Messaging theme, with incoming and outgoing ASCII text bubbles, Today and Yesterday dividers, message times and a text-only composer."></a></div><figcaption><span class="rule-number">THE CONVERSATION</span><h3>Pick up where you left off.</h3><p>Read your text with recorded dates and message times. Tap a message for its recorded details. Local unread indicators help you find what is new.</p></figcaption></figure>
+          <figure class="screenshot-card"><div class="screenshot-surface"><a class="screenshot-link" href="/screenshots/contacts-v8.png" aria-label="View full-size Contacts preview"><img src="/screenshots/contacts-v8.png" width="1206" height="2622" loading="lazy" alt="The separate Contacts tab with fictional email addresses, verified identity labels and a contact awaiting verification."></a></div><figcaption><span class="rule-number">THE CONTACTS</span><h3>Verification has its own place.</h3><p>Add a Gmail or Google Workspace address, compare fingerprints outside ISYEET, and manage contacts separately from your conversations.</p></figcaption></figure>
+          <figure class="screenshot-card"><div class="screenshot-surface screenshot-surface-terminal"><a class="screenshot-link" href="/screenshots/terminal-v8.png" aria-label="View full-size Terminal theme preview"><img src="/screenshots/terminal-v8.png" width="1206" height="2622" loading="lazy" alt="The same Messages inbox in the Terminal / IRC theme, with green monospaced text on a dark background, dates and unread counts."></a></div><figcaption><span class="rule-number">THE OTHER LOOK</span><h3>A little IRC. Still just text.</h3><p>Choose familiar messaging bubbles or a green-on-black terminal appearance. The same messages and encryption, with no commands or rich formatting.</p></figcaption></figure>
+        </div>
+      </section>
+
+      <section class="details" aria-labelledby="details-title">
+        <div class="details-heading"><p class="eyebrow">Small by design</p><h2 id="details-title">A conversation.<br>Nothing attached.</h2><p>ISYEET has one job: move encrypted text between people. That is the product, and the limit.</p></div>
+        <dl class="details-list">
+          <div><dt>A familiar address.</dt><dd>Sign in with Google and add contacts by Gmail or Google Workspace address. Independently compare identity fingerprints through a trusted channel before messaging.</dd></div>
+          <div><dt>Seven-day messages.</dt><dd>Read or unread, text has a fixed deadline seven days after sending. Retries never restart the clock. Suspended apps clean up expired history before showing it again.</dd></div>
+          <div><dt>Direct text. Small groups.</dt><dd>Message one person, test delivery to yourself, or talk in a fixed group of up to eight people. Each recipient gets a separate end-to-end encrypted copy. Titles and membership stay fixed. Every member independently verifies the others.</dd></div>
+          <div><dt>The same size on the wire.</dt><dd>Messages of up to 1,024 characters share the same 8,192-byte encrypted envelope. Direct text, group copies and cover packets all use that size.</dd></div>
+          <div><dt>Optional cover traffic.</dt><dd>Choose generic “New message” notifications or quiet cover mode; only one can be on. While the app is active, cover mode offers a sending slot every 15–45 seconds: queued text first, otherwise an encrypted random nonce for an eligible contact. Both verified contacts must opt in and exchange real messages. It pauses in the background. Cover packets never appear in your inbox. Budgets and peer availability can pause them too; this reduces some traffic clues but does not prevent traffic analysis.</dd></div>
+          <div><dt>A smaller surface.</dt><dd>No media decoders, link previews, or message formatting engine. Fewer things to parse, and fewer ways for a message to pretend to be something else.</dd></div>
+        </dl>
+      </section>
+
+      <section class="release" aria-labelledby="release-title"><span class="label label-dark">Coming soon</span><div><h2 id="release-title">One job. On its way.</h2><p>ISYEET is in development for iPhone and the command line. Public downloads are not available yet. Independent security review is still ahead.</p></div></section>
+    </main>
+    <footer class="footer"><a class="wordmark" href="/" aria-label="ISYEET home">isyeet<span aria-hidden="true">_</span></a><p>I Send You E2E Text. That’s it.</p><span>Text only. By principle.</span></footer>
+  </div>
+</body>
+</html>
