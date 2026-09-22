@@ -7,9 +7,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#d7ff3f">
-  <meta name="description" content="Coming soon: ISYEET. End-to-end encrypted ASCII text, a clear conversation inbox, seven-day messages, and Messaging or Terminal themes. Preview the iPhone app.">
+  <meta name="description" content="Coming soon: ISYEET. End-to-end encrypted text and ASCII emojis with personality. A clear inbox, seven-day messages, and Messaging or Terminal themes.">
   <meta property="og:title" content="ISYEET — Just text. Coming soon.">
-  <meta property="og:description" content="I Send You E2E Text. A familiar inbox for encrypted ASCII text. Seven-day messages. Messaging and Terminal themes. Coming soon.">
+  <meta property="og:description" content="I Send You E2E Text. ASCII emojis. All the feeling, a few characters. Encrypted text, seven-day messages, and Messaging or Terminal themes. Coming soon.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.isyeet.io/">
   <link rel="canonical" href="https://www.isyeet.io/">
@@ -32,6 +32,7 @@
           <h1 id="headline">Just text.<br>End to end<span class="period">.</span></h1>
           <p class="intro">A familiar inbox. Private text.<br>Send what you mean. Nothing attached.</p>
           <div class="availability"><span class="label">Coming soon</span><span>iPhone + command line</span></div>
+          <a class="faces-teaser" href="#ascii-faces"><code>(^_^)</code> Meet the ASCII emojis.</a>
         </div>
         <figure class="hero-preview">
           <a class="screenshot-link" href="/screenshots/inbox-v8.png" aria-label="View full-size Messages inbox preview"><img src="/screenshots/inbox-v8.png" width="1206" height="2622" alt="ISYEET Messages inbox with recent conversations, dates, message previews, unread counts, and separate Messages, Contacts and Settings tabs." fetchpriority="high"></a>
@@ -44,10 +45,34 @@
         <h2 id="rules-title">95 characters.<br>Zero extras.</h2>
         <p class="rules-intro">Letters, numbers, punctuation, and spaces. The 95 printable ASCII characters are the entire vocabulary.</p>
         <div class="rule-grid">
-          <article><span class="rule-number">01 / THE MESSAGE</span><h3>Words stay words.</h3><p>No photos. No videos. No attachments. No emoji, hidden characters, or rich formatting. Links stay plain text.</p></article>
+          <article><span class="rule-number">01 / THE MESSAGE</span><h3>Words stay words.</h3><p>No photos. No videos. No attachments. Printable ASCII only, including faces made from punctuation. Links stay plain text.</p></article>
           <article><span class="rule-number">02 / THE ENCRYPTION</span><h3>For your contact.</h3><p>Messages are encrypted on your device using Signal’s official libsignal. The relay delivers ciphertext; it does not hold the keys to read your text.</p></article>
           <article><span class="rule-number">03 / THE BOUNDARY</span><h3>Checked on arrival.</h3><p>The receiving app validates decrypted bytes before displaying anything. Non-ASCII and non-printable content is rejected, with an alert.</p></article>
         </div>
+      </section>
+
+      <section class="ascii-faces" id="ascii-faces" aria-labelledby="faces-title">
+        <div class="faces-copy">
+          <p class="eyebrow">ASCII emojis</p>
+          <h2 id="faces-title">The only emojis<br>that matter.</h2>
+          <p class="faces-intro">A smile. A wink. A tiny cat.<br>Punctuation already has personality.</p>
+          <ul class="face-catalog" aria-label="The eight faces in the iPhone picker">
+            <li><code>(^_^)</code><span>Happy</span></li>
+            <li><code>:-)</code><span>Smile</span></li>
+            <li><code>;-)</code><span>Wink</span></li>
+            <li><code>(o_o)</code><span>Surprised</span></li>
+            <li><code>:(</code><span>Sad</span></li>
+            <li><code>&lt;3</code><span>Love</span></li>
+            <li><code>\o/</code><span>Celebrate</span></li>
+            <li><code>=^.^=</code><span>Cat</span></li>
+          </ul>
+          <p class="faces-explainer">Pick a face in a direct chat, a self-test or a group. It adds ordinary text to your draft. Review it, then tap Send. Or type your own with any of the 95 printable ASCII characters.</p>
+          <p class="faces-principle">Every face stays literal text, with the same end-to-end encryption as your words. No Unicode emoji, stickers or animations. All the feeling. A few characters.</p>
+        </div>
+        <figure class="faces-preview">
+          <a class="screenshot-link" href="/screenshots/ascii-faces-v9.png" aria-label="View full-size ASCII faces picker preview"><img src="/screenshots/ascii-faces-v9.png" width="1206" height="2622" loading="lazy" alt="The iPhone ASCII faces picker with eight named choices: Happy, Smile, Wink, Surprised, Sad, Love, Celebrate and Cat. The sheet explains that a selection adds ordinary text to the draft for review before sending."></a>
+          <figcaption>Eight faces. Still just text.<span>Actual development UI · Fictional local data</span></figcaption>
+        </figure>
       </section>
 
       <section class="screenshots" id="screenshots" aria-labelledby="screenshots-title">
