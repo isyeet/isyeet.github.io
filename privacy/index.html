@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self' data:; base-uri 'none'; form-action 'none'; upgrade-insecure-requests">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#d7ff3f">
+  <meta name="description" content="What ISYEET stores, what stays on your device, and the limits of seven-day message deletion.">
+  <link rel="canonical" href="https://www.isyeet.io/privacy/">
+  <link rel="stylesheet" href="/style.css">
+  <title>Privacy — ISYEET</title>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="page">
+    <header class="header"><a class="wordmark" href="/" aria-label="ISYEET home">isyeet<span aria-hidden="true">_</span></a><p class="name">I Send You E2E Text</p><nav class="navigation" aria-label="Main navigation"><a class="nav" href="/support/">Support</a></nav></header>
+    <main id="main" class="policy">
+      <p class="eyebrow">The service, the app, and these pages</p>
+      <h1>Privacy.</h1>
+      <p class="policy-date">Effective September 23, 2026</p>
+      <p class="policy-lead">Message contents are end-to-end encrypted. Delivery still needs account and routing information. Here is what that means in ISYEET.</p>
+
+      <section aria-labelledby="contents"><h2 id="contents">Your text stays between devices.</h2>
+        <p>The app and command-line client encrypt messages using Signal’s official libsignal before sending them. The relay receives encrypted envelopes, not your text or your private messaging keys. Private keys, verified contacts, encryption sessions and recent message history are held on your device. Groups use a separate encrypted copy for each recipient.</p>
+        <p>ISYEET accepts printable ASCII messages only. ASCII faces are ordinary text. There are no attachments, link previews, media uploads or formatted messages.</p>
+      </section>
+
+      <section aria-labelledby="account"><h2 id="account">What the service processes.</h2>
+        <dl class="policy-data">
+          <div><dt>Account and sign-in</dt><dd>Your canonical email address, a Google account identifier, account creation information and public encryption keys remain with your account until you delete it. Google verifies your sign-in; ISYEET does not receive your Google password or request access to Gmail messages, files or your Google contacts. Session tokens authorize the app; the relay stores token hashes with an expiry of up to seven days.</dd></div>
+          <div><dt>Message delivery</dt><dd>Encrypted envelopes, message identifiers, sender and recipient account identifiers, ciphertext hashes, and delivery and expiry timestamps. The service can observe who sends to whom and when. It also stores the contacts you permit to send to you. Group content and the group roster are inside encrypted messages; delivery patterns can still reveal relationships.</dd></div>
+          <div><dt>Optional notifications</dt><dd>An Apple push token and a small pending notification record. Notifications contain a generic “New message” alert, not message text or a sender’s name. Apple processes push delivery information. Push delivery depends on device settings and service availability.</dd></div>
+          <div><dt>Traffic preferences</dt><dd>Your notification or cover-mode preference. Cover mode and remote alerts are mutually exclusive. Equal-size envelopes and optional cover packets reduce some traffic clues; they do not hide all timing, network addresses or relationships. The iOS sending schedule runs only while the app is active.</dd></div>
+          <div><dt>Network and support information</dt><dd>Network addresses, request timing and security-related rate limits are processed to operate and protect the service. If you contact support, we receive the information you choose to send. Ordinary support email is separate from ISYEET’s encrypted messaging and does not automatically expire after seven days. You can request deletion of that correspondence through support.</dd></div>
+        </dl>
+      </section>
+
+      <section aria-labelledby="retention"><h2 id="retention">Seven days, with clear limits.</h2>
+        <p>Each message has a fixed expiry seven days after the sending client encrypts it. Reading or retrying a message does not extend that deadline. The relay stops offering expired messages and clears encrypted bodies after recipient acknowledgment or expiry, whichever happens first. Delivery and duplicate-prevention metadata can remain until the same deadline. Maintenance removes expired live database rows in batches.</p>
+        <p>The app keeps at most 200 unexpired history entries. It removes expired history before displaying it again. An app that is closed, or a device whose protected storage is locked, cannot erase data at an exact moment. A stopped command-line client cleans up when it next runs. Small local duplicate-prevention records can remain for seven days after first receipt without message text.</p>
+        <aside class="policy-note"><strong>Cloudflare recovery history lasts longer.</strong><p>The relay uses Cloudflare SQLite-backed Durable Objects. Cloudflare provides a <a href="https://developers.cloudflare.com/durable-objects/api/sqlite-storage-api/#pitr-point-in-time-recovery-api">30-day database recovery window</a>. Deleted ciphertext and account or routing metadata can remain in that recovery history after live deletion. Seven-day message expiry is not a promise that every provider-held copy is physically erased within seven days.</p></aside>
+        <p>Recipients can keep independent copies or screenshots. Device backups, filesystem snapshots and information already copied outside the app are not erased by a message timer or by deleting your account.</p>
+      </section>
+
+      <section aria-labelledby="deletion"><h2 id="deletion">Delete your account or replace a lost device.</h2>
+        <p>In an app version with account controls, open Settings and choose Delete account. Confirm the warning and sign in to Google again. After the service confirms deletion, the app clears its saved account, private keys and local messages. The relay removes your live account identity, public keys, sessions, contact permissions, queued messages to or from you, notification registration and traffic preferences. A small, hashed operation receipt expires after 24 hours and is removed by maintenance, so a connection failure can be retried safely without deleting a new registration. Provider recovery history remains subject to the limit above.</p>
+        <p>Deleting your account does not delete your Google account, erase a recipient’s device or remotely wipe a lost device. If you later sign up again, you create new messaging keys.</p>
+        <p>For a lost device, secure your Google account, then sign in on a new phone and explicitly re-enroll. This replaces your messaging identity and revokes existing service sessions; it does not recover old messages or private keys. Someone who still controls your Google account can sign in again and request another re-enrollment. Contacts must remove the old contact, add you again and independently verify the new fingerprint. A key-change warning is a reason to verify your identity through another trusted channel.</p>
+        <p>For help with account access or a privacy request, use the contact on our <a href="/support/">support page</a>.</p>
+      </section>
+
+      <section aria-labelledby="providers"><h2 id="providers">Providers and public websites.</h2>
+        <p>Cloudflare hosts the relay and the primary website. GitHub hosts the alternate website at isyeet.github.io. Google processes sign-in, and Apple provides app distribution and optional push delivery. These providers process information under their own terms and privacy policies and may process it in different countries.</p>
+        <p>Provider privacy information: <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare</a>, <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub</a>, <a href="https://policies.google.com/privacy">Google</a>, and <a href="https://www.apple.com/legal/privacy/">Apple</a>.</p>
+        <p>We do not add advertising, analytics scripts, tracking cookies or contact forms to these static websites. The sites do not sign you in to the messaging service. Hosting providers still process ordinary connection and request information. The relay deployment disables application request logging; that does not remove the providers’ own operational records.</p>
+      </section>
+
+      <section aria-labelledby="choices"><h2 id="choices">Questions and changes.</h2>
+        <p>You can ask about the personal information associated with your account, request correction or deletion, and raise a privacy concern through <a href="/support/">support</a>. We may need to verify account ownership. Your applicable privacy rights depend on where you live.</p>
+        <p>ISYEET is in development. We will update this page when its data practices change and show the effective date here. We will bring material changes to users’ attention before they take effect where required.</p>
+      </section>
+    </main>
+    <footer class="footer"><a class="wordmark" href="/">isyeet_</a><p>I Send You E2E Text. That’s it.</p><nav class="footer-links" aria-label="Policies and help"><a href="/privacy/" aria-current="page">Privacy</a><a href="/terms/">Terms</a><a href="/support/">Support</a></nav></footer>
+  </div>
+</body>
+</html>

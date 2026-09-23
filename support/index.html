@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self' data:; base-uri 'none'; form-action 'none'; upgrade-insecure-requests">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#d7ff3f">
+  <meta name="description" content="Help with ISYEET sign-in, lost devices, changed contact keys, account deletion and privacy requests.">
+  <link rel="canonical" href="https://www.isyeet.io/support/">
+  <link rel="stylesheet" href="/style.css">
+  <title>Support — ISYEET</title>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="page">
+    <header class="header"><a class="wordmark" href="/" aria-label="ISYEET home">isyeet<span aria-hidden="true">_</span></a><p class="name">I Send You E2E Text</p><nav class="navigation" aria-label="Main navigation"><a class="nav" href="/">The service</a></nav></header>
+    <main id="main" class="policy">
+      <p class="eyebrow">A little help. Still just text.</p>
+      <h1>Support.</h1>
+      <p class="policy-lead">For account help, privacy requests, abuse reports or a security concern, contact ISYEET here.</p>
+      <aside class="policy-note"><h2>Contact ISYEET</h2><p><a href="mailto:support@isyeet.io">support@isyeet.io</a></p><p>Include your app version, iOS version, what you expected and the error you saw. Share only the information needed to explain the issue. Do not send private keys, sign-in tokens, Google passwords or complete client-state files.</p><p>Ordinary support email is not an ISYEET encrypted conversation. A report can include text you deliberately choose to share; we cannot retrieve or decrypt your messages for you. For a suspected vulnerability, contact us privately before posting exploit details publicly.</p></aside>
+      <section aria-labelledby="access"><h2 id="access">Getting access.</h2><p>ISYEET is currently a limited TestFlight development release. Public downloads are not available yet. TestFlight installation and ISYEET sign-in are separate: Apple handles the invitation, and you sign in to ISYEET with your Google account. Both Gmail and Google Workspace accounts are supported. Use the actual account address, not a plus alias.</p></section>
+      <section aria-labelledby="lost-device"><h2 id="lost-device">I lost my device.</h2><p>Secure your Google account and use Apple’s device-management tools if appropriate. Install ISYEET on the replacement phone, sign in to the same Google account, then choose the explicit re-enrollment option and read its warning. Re-enrollment replaces the encryption identity and revokes the old service sessions. It cannot recover old messages or wipe the lost device.</p><p>Tell your contacts through another trusted channel. They must remove your old contact, add your email again and independently verify the new fingerprint. Old groups affected by a changed identity stay blocked; create and verify a new group with the intended members.</p></section>
+      <section aria-labelledby="changed-keys"><h2 id="changed-keys">A contact’s keys changed.</h2><aside class="policy-note policy-warning"><strong>Stop and verify the person.</strong><p>A changed key could mean a replacement device or someone impersonating your contact. A matching email address alone does not verify the new encryption key. Do not accept a replacement just because the app or server presents it.</p></aside><p>Contact the person through a channel you already trust. After confirming the change, remove the old contact in Contacts, add the email again and compare the complete new fingerprint independently. ISYEET does not automatically transfer trust to replacement keys.</p></section>
+      <section aria-labelledby="delete"><h2 id="delete">Delete my account.</h2><p>Update to an app version with account controls, open Settings → Delete account, confirm the destructive action and complete fresh Google sign-in. Keep the app open until it reports completion. If the connection fails, retry the pending action; do not assume that an error means nothing changed on the server.</p><p>Successful deletion removes the live account and clears that installation’s local account, keys and history. It does not delete your Google account or copies on other devices. Cloudflare recovery history may still contain deleted data within its 30-day window. See the <a href="/privacy/#deletion">privacy policy</a> for the full scope. If you cannot sign in, contact support; ownership verification is necessary.</p></section>
+      <section aria-labelledby="delivery"><h2 id="delivery">Messages or alerts are missing.</h2><p>Both contacts need to add and verify each other before delivery is permitted. Messages expire seven days after encryption, including messages waiting to be delivered. Open the app and check sign-in status, verification warnings and network access.</p><p>Cover mode disables remote alerts and sends on its schedule only while the app is active. Choose notifications instead if you want generic alerts, and check iOS notification permission. Real-device push delivery is still being qualified for the development release; an alert is not proof of successful decryption.</p></section>
+      <section aria-labelledby="limits"><h2 id="limits">What support cannot recover.</h2><p>There is no server copy of your private messaging keys and no plaintext message archive. We cannot recover lost keys, decrypt a conversation or restore trust in a changed contact for you. ISYEET is not an emergency service.</p></section>
+    </main>
+    <footer class="footer"><a class="wordmark" href="/">isyeet_</a><p>I Send You E2E Text. That’s it.</p><nav class="footer-links" aria-label="Policies and help"><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="/support/" aria-current="page">Support</a></nav></footer>
+  </div>
+</body>
+</html>
