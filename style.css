@@ -682,6 +682,102 @@ dd {
   .policy-lead { font-size:1.1875rem; }
   .policy-note { padding:1.1rem; }
 }
+.manifesto-page {
+  --ink:#243d2c;
+  --paper:#f1f0e8;
+  --accent:#dce7ca;
+  color:var(--ink);
+  background:var(--paper);
+  font-family:var(--mono);
+  font-variant-ligatures:none;
+}
+.manifesto {
+  max-width:76ch;
+  margin:0 auto;
+  padding:3rem 1.5rem 4rem;
+}
+.manifesto-header {
+  padding-bottom:2.5rem;
+  margin-bottom:2.5rem;
+  border-bottom:1px dashed currentColor;
+}
+.manifesto-eyebrow {
+  font-size:.75rem;
+  text-transform:uppercase;
+  letter-spacing:.07em;
+}
+.manifesto-cabin {
+  margin:3rem 0 2.5rem;
+  font-family:inherit;
+  font-size:clamp(.75rem,2.5vw,.9375rem);
+  line-height:1.25;
+}
+.manifesto h1 {
+  font-size:clamp(2.5rem,8vw,4.75rem);
+  font-weight:700;
+  letter-spacing:-.07em;
+  line-height:1.05;
+  text-transform:uppercase;
+}
+.manifesto-deck {
+  margin-top:1.5rem;
+  font-size:.8125rem;
+}
+.manifesto-body p {
+  line-height:1.85;
+  margin-top:1.25rem;
+}
+.manifesto-body section {
+  margin-top:3.5rem;
+}
+.manifesto h2 {
+  font-size:1rem;
+  font-weight:700;
+  line-height:1.65;
+  letter-spacing:0;
+}
+.manifesto code {
+  font-family:inherit;
+  font-size:inherit;
+  white-space:nowrap;
+}
+.manifesto-transmission {
+  margin:2rem 0;
+  padding:1rem 0 1rem 1.25rem;
+  border-left:2px solid currentColor;
+}
+.manifesto-transmission p {
+  margin:0;
+}
+.manifesto-transmission p + p {
+  margin-top:.5rem;
+}
+.manifesto-transmission span {
+  font-weight:700;
+  white-space:nowrap;
+}
+.manifesto-body .manifesto-last {
+  margin-top:2rem;
+  font-weight:700;
+}
+.manifesto-footer {
+  margin-top:3rem;
+  padding-top:1.5rem;
+  border-top:1px dashed currentColor;
+  font-size:.8125rem;
+}
+.manifesto-eof {
+  margin-top:2.5rem;
+}
+@media(max-width:400px) {
+  .manifesto {
+    padding:2rem 1.25rem 3rem;
+    font-size:.9375rem;
+  }
+  .manifesto h2 {
+    font-size:.9375rem;
+  }
+}
 @media(prefers-reduced-motion:no-preference) {
   html {
     scroll-behavior:smooth;
